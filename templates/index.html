@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sentiment Analysis - LR</title>
+{% endblock %}
+
+{% block body %}
+
+<form action='/predict' method="POST">
+<br/>
+<br/>
+<div class="form-group">
+    <label for="usr"><b>Tweet for Prediction:</b></label>
+    <input id="userInput" name ="userInput" type="text" class="form-control" placeholder="Enter Text to predict the Sentiment">
+</div>
+<button type="submit" class="btn btn-dark">Dark</button>
+</form>
+{% endblock %}

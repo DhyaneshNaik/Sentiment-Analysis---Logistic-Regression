@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sentiment Analysis - LR</title>
+{% endblock %}
+
+{% block body %}
+
+<br />
+<br />
+<div class="form-group">
+    <div class="jumbotron" style="background-color:{{ color }}">
+        <h4><b>{{ text }}</b></h4>
+    </div>
+    <label>
+        <h2>Sentiment:</h2>
+    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="{{url_for('static',filename="./images/"+image)}}" class="rounded" alt="Image"
+        style="border-style: solid;width: 250px;height: 250px;">
+</div>
+{% endblock %}
